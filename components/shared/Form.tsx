@@ -134,7 +134,7 @@ const Form = (props: Props) => {
         <button
           type="submit"
           disabled
-          className="w-[35%] md:w-[25%] bg-[#CED6F7] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-[25px] focus:outline-none focus:shadow-outline"
+          className="w-[35%] md:w-[30%] bg-[#CED6F7] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-[25px] focus:outline-none focus:shadow-outline"
         >
           Sign Up
         </button>
