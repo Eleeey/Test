@@ -6,9 +6,11 @@ type Props = {}
 const Form = (props: Props) => {
 
       const [formData, setFormData] = useState({
-        name: "",
-        email: "",
-        message: "",
+        Firstname: "",
+        Lastname:"",
+        WorkEmail: "",
+        BusinessName: "",
+        Password:""
       });
 
       const handleChange = (e: { target: { name: any; value: any } }) => {
@@ -26,9 +28,11 @@ const Form = (props: Props) => {
 
         // Reset the form fields
         setFormData({
-          name: "",
-          email: "",
-          message: "",
+          Firstname: "",
+          Lastname: "",
+          WorkEmail: "",
+          BusinessName: "",
+          Password: "",
         });
       };
 
@@ -39,7 +43,7 @@ const Form = (props: Props) => {
       <form onSubmit={handleSubmit} className="mt-4 w-full">
         <div className="mb-4">
           <label
-            htmlFor="name"
+            htmlFor="Firstname"
             className="block text-gray-700 text-sm font-bold mb-2"
           >
             First name:
@@ -48,7 +52,7 @@ const Form = (props: Props) => {
             type="text"
             id="name"
             name="name"
-            value={formData.name}
+            value={formData.Firstname}
             onChange={handleChange}
             className="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             required
@@ -56,7 +60,7 @@ const Form = (props: Props) => {
         </div>
         <div className="mb-4">
           <label
-            htmlFor="name"
+            htmlFor="Lastname"
             className="block text-gray-700 text-sm font-bold mb-2"
           >
             Last name:
@@ -65,7 +69,7 @@ const Form = (props: Props) => {
             type="text"
             id="name"
             name="name"
-            value={formData.name}
+            value={formData.Lastname}
             onChange={handleChange}
             className="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             required
@@ -74,16 +78,16 @@ const Form = (props: Props) => {
 
         <div className="mb-4">
           <label
-            htmlFor="name"
+            htmlFor="BusinessName"
             className="block text-gray-700 text-sm font-bold mb-2"
           >
             Business name and HQ location:
           </label>
           <input
             type="text"
-            id="name"
-            name="name"
-            value={formData.name}
+            id="BusinessName"
+            name="BusinessName"
+            value={formData.BusinessName}
             onChange={handleChange}
             className="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             required
@@ -91,16 +95,16 @@ const Form = (props: Props) => {
         </div>
         <div className="mb-4">
           <label
-            htmlFor="email"
+            htmlFor="WorkEmail"
             className="block text-gray-700 text-sm font-bold mb-2"
           >
             Work email:
           </label>
           <input
             type="email"
-            id="email"
-            name="email"
-            value={formData.email}
+            id="WorkEmail"
+            name="WorkEmail"
+            value={formData.WorkEmail}
             onChange={handleChange}
             className="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             required
@@ -108,16 +112,16 @@ const Form = (props: Props) => {
         </div>
         <div className="mb-4">
           <label
-            htmlFor="email"
+            htmlFor="Password"
             className="block text-gray-700 text-sm font-bold mb-2"
           >
             Password:
           </label>
           <input
             type="email"
-            id="email"
-            name="email"
-            value={formData.email}
+            id="Password"
+            name="Password"
+            value={formData.Password}
             onChange={handleChange}
             className="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             required

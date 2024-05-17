@@ -8,10 +8,10 @@ import React from 'react'
 type Props = {}
 
 const Nav = (props: Props) => {
-    const pathName=usePathname()
+    
   return (
-    <nav className="p-10 h-[5vh] flex flex-row bg-[#F8F8FB] items-center justify-between">
-      <div className="w-50 ">
+    <nav className="p-10 h-[5vh] w-[100vw] flex flex-row  bg-[#F8F8FB] items-center justify-between">
+      <div className="w-50  z-50">
         <Image src="/log.png" alt="logo" height={24} width={24} />
       </div>
 
@@ -22,7 +22,7 @@ const Nav = (props: Props) => {
         >
           Log In
           <Image src="Arrow2.svg" alt={"arrow"} height={12} width={12} />
-          {/* {pathName===} */}
+          
         </Link>
       </div>
     </nav>

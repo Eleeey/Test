@@ -3,9 +3,9 @@ import React from "react";
 
 type Props = {};
 
-const SideHero = (props: Props) => {
+const SignUpHero = (props: Props) => {
   return (
-    <div className="gradient hidden w-[50%] lg:flex flex-col items-center justify-center  lg:">
+    <div className="gradient hidden lg:flex flex-col w-[50%] -mt-[15%] items-center justify-center  lg:">
       <div className="">
         <Image
           src={"/hero.png"}
@@ -15,6 +15,7 @@ const SideHero = (props: Props) => {
           width={450}
         />
       </div>
+
       <div className="flex flex-col">
         <h2 className=" mt-[1rem] text-[40px] text-center">
           Royalty collections <br /> simplified. It's next level!
@@ -28,4 +29,4 @@ const SideHero = (props: Props) => {
   );
 };
 
-export default SideHero;
+export default SignUpHero;

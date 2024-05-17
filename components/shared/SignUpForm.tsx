@@ -3,7 +3,7 @@ import Form from './Form'
 
 type Props = {}
 
-const MainPage = (props: Props) => {
+const SignUpForm = (props: Props) => {
   return (
     <section className="flex flex-col  p-10 gap-3 w-[90%] md:w-[70%] lg:w-[50%] ">
         <div className="flex flex-col">
@@ -17,4 +17,4 @@ const MainPage = (props: Props) => {
   )
 }
 
-export default MainPage
+export default SignUpForm

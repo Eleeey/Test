@@ -7,10 +7,12 @@
 
  body{
   font-family: 'DM Sans',sans-serif ;
+  max-width: 1300px;
  }
  *{
   font-family: 'DM Sans',sans-serif
  }
  .gradient{
+  z-index: 0;
   background: linear-gradient(146.36deg, #DFEAF0 8.13%, #D5E4EA 58.07%, #F4E7F4 99.76%);
 }
