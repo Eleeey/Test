@@ -3,7 +3,7 @@ import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/shared/Nav";
 
-const font = DM_Sans({ subsets: ["latin"] });
+// const font = DM_Sans({ subsets: ["100"] });
 
 export const metadata: Metadata = {
   title: "FranChain",
@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={font.className}>
+      <body className={""}>
         <Nav />
         {children}
       </body>
