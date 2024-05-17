@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  /* border:1px solid black */
+}
+
+.gradient
+{background: linear-gradient(146.36deg, #DFEAF0 8.13%, #D5E4EA 58.07%, #F4E7F4 99.76%);}
+/*  */
+/* width: Fixed (650px)px;
+height: Fixed (1,116px)px;
+left: 214px;
+padding: 290px 48px 290px 48px;
+gap: 10px;
+opacity: 0px; */
+/* background: #FF4E4E; */
+
